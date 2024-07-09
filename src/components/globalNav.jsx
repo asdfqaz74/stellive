@@ -3,16 +3,17 @@ import Link from "next/link";
 
 export default function GlobalNav() {
   return (
-    <nav className="bg-light rounded shadow-lg justify-center items-center flex h-[7rem]">
-      <ul className="font-bold text-lg flex items-center gap-x-36 px-4">
-        <li>
+    <nav className="bg-light rounded shadow-lg justify-center items-center flex h-[7rem] px-4">
+      <ul className="font-bold text-lg flex items-center gap-x-36">
+        <li className="relative w-40 h-auto">
           <Link href="/">
             <Image
               src="/logo2.png"
-              width={200}
-              height={117}
-              alt=""
-              className="object-cover"
+              alt="logo"
+              layout="intrinsic"
+              width={236}
+              height={54}
+              objectFit="cover"
             />
           </Link>
         </li>

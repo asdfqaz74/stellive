@@ -1,9 +1,5 @@
 import GlobalNav from "@/components/globalNav";
 
 export default function HomePage() {
-  return (
-    <div>
-      <GlobalNav />
-    </div>
-  );
+  return <div></div>;
 }

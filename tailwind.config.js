@@ -14,8 +14,8 @@ module.exports = {
           "linear-gradient(transparent, transparent), linear-gradient(#8190e6, #8190e6)",
       },
       backgroundSize: {
-        "size-0-3": "0 3px",
-        "size-100-3": "100% 3px",
+        "size-0-3": "0 2px",
+        "size-100-3": "100% 2px",
       },
       backgroundPosition: {
         "pos-0-100": "0 100%",

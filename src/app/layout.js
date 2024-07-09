@@ -1,3 +1,5 @@
+import GlobalNav from "@/components/globalNav";
+import ClientOnlyComponent from "./client-only-component";
 import "../styles/global.css";
 
 export const metadata = {
@@ -8,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ClientOnlyComponent />
+        <GlobalNav />
+        {children}
+      </body>
     </html>
   );
 }
