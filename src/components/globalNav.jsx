@@ -16,18 +16,18 @@ export default function GlobalNav() {
             />
           </Link>
         </li>
-        <li className="hover:text-primaryHover link-underline link-underline-black">
+        <li className="hover:text-primaryHover link-underline link-underline-primary">
           <Link className="" href="/">
             HOME
           </Link>
         </li>
-        <li className="hover:text-primaryHover link-underline link-underline-black">
+        <li className="hover:text-primaryHover link-underline link-underline-primary">
           <Link href="/talents">TALENTS</Link>
         </li>
-        <li className="hover:text-primaryHover link-underline link-underline-black">
+        <li className="hover:text-primaryHover link-underline link-underline-primary">
           <Link href="/music">MUSIC</Link>
         </li>
-        <li className="hover:text-primaryHover link-underline link-underline-black">
+        <li className="hover:text-primaryHover link-underline link-underline-primary">
           <Link href="/contact">CONTACT</Link>
         </li>
       </ul>

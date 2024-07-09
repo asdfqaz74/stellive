@@ -10,7 +10,7 @@ module.exports = {
       backgroundImage: {
         "link-underline":
           "linear-gradient(transparent, transparent), linear-gradient(#fff, #fff)",
-        "link-underline-black":
+        "link-underline-primary":
           "linear-gradient(transparent, transparent), linear-gradient(#8190e6, #8190e6)",
       },
       backgroundSize: {
