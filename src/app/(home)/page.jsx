@@ -6,9 +6,9 @@ export default function HomePage() {
   return (
     <div className="bg-light">
       <SwiperAd />
-      <HomeStar className="mt-10" />
+      <HomeStar img={"/main_news.png"} className="mt-10" />
       <HomeCards />
-      <HomeStar className="mt-10" />
+      <HomeStar img={"/main_music.png"} className="mt-20" />
       <HomeCards />
     </div>
   );

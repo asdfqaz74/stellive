@@ -8,7 +8,7 @@ module.exports = {
   safelist: [
     "animate-fade-up",
     "animate-once",
-    "animate-duration-1000",
+    "animate-duration-700",
     "animate-ease-in",
     "opacity-0",
     "opacity-100",

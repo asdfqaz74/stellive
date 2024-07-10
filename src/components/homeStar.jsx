@@ -3,7 +3,7 @@
 import Image from "next/image";
 import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 
-export default function HomeStar({ className, ...restProps }) {
+export default function HomeStar({ className, img, ...restProps }) {
   const elementRef = useIntersectionObserver({ threshold: 0.5 });
 
   const containerClass = `flex flex-col items-center gap-4 opacity-0 ${className}`;
@@ -21,7 +21,7 @@ export default function HomeStar({ className, ...restProps }) {
       </div>
       <div className="w-52">
         <Image
-          src="/main_news.png"
+          src={img}
           alt=""
           width={2025}
           height={1271}
