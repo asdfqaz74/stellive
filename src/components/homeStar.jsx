@@ -1,17 +1,15 @@
+"use client";
+
 import Image from "next/image";
-import classNames from "classnames";
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 
 export default function HomeStar({ className, ...restProps }) {
-  const containerClass = classNames(
-    "flex flex-col items-center gap-4",
-    className
-  );
+  const elementRef = useIntersectionObserver({ threshold: 0.5 });
+
+  const containerClass = `flex flex-col items-center gap-4 opacity-0 ${className}`;
 
   return (
-    <div
-      className={`animate-fade-up animate-once animate-duration-1000 animate-ease-in ${containerClass}`}
-      {...restProps}
-    >
+    <div ref={elementRef} className={`${containerClass}`} {...restProps}>
       <div className="w-16">
         <Image
           src="/main_star1.png"

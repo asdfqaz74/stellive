@@ -8,6 +8,8 @@ export default function HomePage() {
       <SwiperAd />
       <HomeStar className="mt-10" />
       <HomeCards />
+      <HomeStar className="mt-10" />
+      <HomeCards />
     </div>
   );
 }
