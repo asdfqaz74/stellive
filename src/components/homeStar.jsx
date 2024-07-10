@@ -30,6 +30,15 @@ export default function HomeStar({ className, ...restProps }) {
           className="object-cover"
         />
       </div>
+      <div className="w-36">
+        <Image
+          src="/stelliveText.png"
+          alt=""
+          width={2025}
+          height={1271}
+          className="object-cover"
+        />
+      </div>
     </div>
   );
 }
