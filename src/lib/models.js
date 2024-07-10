@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const newsPost = new mongoose.Schema(
+const PostSchema = new mongoose.Schema(
   {
     title: {
       type: String,
@@ -25,4 +25,4 @@ const newsPost = new mongoose.Schema(
 );
 
 export const Post =
-  mongoose.models?.Post || mongoose.model('Post', newsPost, 'stellive.posts');
+  mongoose.models?.Post || mongoose.model('Post', PostSchema, 'stellive.posts');
