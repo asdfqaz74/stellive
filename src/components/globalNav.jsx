@@ -8,10 +8,9 @@ export default function GlobalNav() {
         <Image
           src="/logo2.png"
           alt="logo"
-          layout="intrinsic"
           width={236}
           height={54}
-          objectFit="cover"
+          className="object-cover"
         />
       </Link>
       <ul className="text-base font-semibold flex items-center justify-around flex-grow gap-4">
