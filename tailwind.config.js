@@ -5,6 +5,14 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    "animate-fade-up",
+    "animate-once",
+    "animate-duration-1000",
+    "animate-ease-in",
+    "opacity-0",
+    "opacity-100",
+  ],
   theme: {
     extend: {
       backgroundImage: {
