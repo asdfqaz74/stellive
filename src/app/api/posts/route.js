@@ -19,7 +19,7 @@ export const GET = async (req) => {
       },
     });
   } catch (err) {
-    console.log(err);
+    console.log('message : ', err);
     return new NextResponse(JSON.stringify({ error: err.message }), {
       status: 500,
     });
