@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 
 const getPosts = async () => {
   const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
+  console.log(baseURL);
   const response = await fetch(`${baseURL}/api/posts`, {
     headers: {
       'Cache-Control': 'no-cache',
