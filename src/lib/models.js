@@ -25,4 +25,4 @@ const PostSchema = new mongoose.Schema(
 );
 
 export const Post =
-  mongoose.models?.Post || mongoose.model('Post', PostSchema, 'stellive.posts');
+  mongoose.models?.Post || mongoose.model('Post', PostSchema, 'posts');

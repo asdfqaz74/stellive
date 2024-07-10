@@ -4,12 +4,10 @@ import { NextResponse } from 'next/server';
 
 export const GET = async (req) => {
   try {
-    console.log('connecting to db...');
     await connectToDb();
-    console.log('fetching posts...');
 
     const posts = await Post.find();
-    console.log('Fetched posts: ', posts);
+
     return new NextResponse(JSON.stringify(posts), {
       headers: {
         'Content-Type': 'application/json',
