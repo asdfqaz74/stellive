@@ -8,15 +8,13 @@ import { register } from "swiper/element/bundle";
 register();
 
 export default function SwiperAd() {
-  const swiperElRef = useRef(null);
-
   return (
     <swiper-container
-      speed="300"
+      speed="1000"
       loop="true"
       pagination="true"
-      navigation="true"
       className=""
+      autoplay='{"delay": 4000}'
     >
       <swiper-slide>
         <Link href="https://stellive.me/news/2652">

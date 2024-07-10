@@ -48,6 +48,7 @@ module.exports = {
         darkHover: "#566099",
         darkActive: "#404873",
         darker: "#323859",
+        nav: "#424242",
       },
     },
   },
