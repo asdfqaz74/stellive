@@ -8,17 +8,16 @@ export default function HomeCard({ post }) {
         ✨ 2024.07.09
       </span>
       <Link href={post.link}>
-        <div className="p-2 border w-96 flex flex-col items-center bg-white group">
-          <div className="w-full overflow-hidden">
+        <div className="p-2 border w-96 h-[25rem] flex flex-col items-center bg-white group">
+          <div className="w-full overflow-hidden h-56 relative">
             <Image
               src={post.img}
               alt=""
-              width={368}
-              height={207}
+              fill
               className="object-cover transition-transform ease-in-out duration-1000 group-hover:scale-110"
             />
           </div>
-          <span className="mt-10 font-bold text-2xl leading-relaxed mb-10 px-4">
+          <span className="mt-10 font-semiboldbold text-xl leading-relaxed mb-10 px-4">
             {post.title}
           </span>
         </div>
