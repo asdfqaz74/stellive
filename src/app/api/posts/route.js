@@ -7,7 +7,7 @@ export const GET = async (req) => {
     await connectToDb();
 
     const posts = await Post.find();
-    return new NextResponse(Json.stringify(posts), {
+    return new NextResponse(JSON.stringify(posts), {
       headers: {
         'Content-Type': 'application/json',
         'Cache-Control': 'no-cache',
