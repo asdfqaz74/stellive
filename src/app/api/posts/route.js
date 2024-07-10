@@ -7,9 +7,18 @@ export const GET = async (req) => {
     await connectToDb();
 
     const posts = await Post.find();
-    return NextResponse.json(posts);
+    return new NextResponse(Json.stringify(posts), {
+      headers: {
+        'Content-Type': 'application/json',
+        'Cache-Control': 'no-cache',
+        Pragma: 'no-cache',
+        Expires: '0',
+      },
+    });
   } catch (err) {
     console.log(err);
-    return NextResponse.error(err);
+    return new NextResponse(JSON.stringify({ error: err.message }), {
+      status: 500,
+    });
   }
 };
