@@ -5,7 +5,8 @@ import HomeCard from './homeCard';
 import { useEffect, useState } from 'react';
 
 const getPosts = async () => {
-  const response = await fetch('http://localhost:3000/api/posts');
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
+  const response = await fetch(`${baseURL}/api/posts`);
 
   if (!response.ok) {
     throw new Error(response.statusText);
