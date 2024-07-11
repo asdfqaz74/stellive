@@ -17,3 +17,9 @@
 .link-underline:not(:hover) {
   @apply bg-size-0-3 bg-pos-100-100;
 }
+
+@layer utilities {
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+}

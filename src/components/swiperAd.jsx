@@ -1,9 +1,8 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import { useRef } from "react";
-import { register } from "swiper/element/bundle";
+import Image from 'next/image';
+import Link from 'next/link';
+import { register } from 'swiper/element/bundle';
 
 register();
 
@@ -13,7 +12,6 @@ export default function SwiperAd() {
       speed="1000"
       loop="true"
       pagination="true"
-      className=""
       autoplay='{"delay": 4000}'
     >
       <swiper-slide>

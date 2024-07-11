@@ -1,9 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function GlobalNav() {
   return (
-    <nav className="bg-light gap-10 rounded shadow-lg justify-center items-center flex h-[7rem] px-64 text-nav">
+    <nav className="bg-white gap-10 rounded shadow-2xl justify-center items-center flex h-20 px-64 text-nav z-50 relative">
       <Link href="/">
         <Image
           src="/logo2.png"
